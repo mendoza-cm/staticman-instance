@@ -4,7 +4,7 @@
   "description": "Static sites with superpowers",
   "main": "index.js",
   "scripts": {
-    "prestart": "if [ ! -d node_modules ]; then npm install; fi",
+    "prestart": "node -e \"if (!require('fs').existsSync('node_modules')) process.exit(1);\" || npm install",
     "start": "node index.js",
     "test": "standard && jest",
     "test-dev": "TEST_DEV=true jest --watch",
