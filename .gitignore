@@ -8,4 +8,5 @@ config.*.json
 !config.example.json
 coverage/
 node_modules/
-staticman_key
+staticman_keykey.pem
+key-oneline.pem
