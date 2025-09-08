@@ -10,3 +10,7 @@ coverage/
 node_modules/
 staticman_keykey.pem
 key-oneline.pem
+# .gitignore
+private-key.pem
+key.pem
+*.pem
